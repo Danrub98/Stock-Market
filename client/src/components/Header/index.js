@@ -3,14 +3,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark">
+      <nav className="navbar navbar-expand-lg navbar-light " style={{ backgroundColor: "none" }}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Andres Plasencia Borja
+            Traders View
           </Link>
           <button
             className="navbar-toggler"
@@ -26,16 +25,16 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <Link className="nav-link" aria-current="page" to="/">
-                About
+                Home
               </Link>
-              <Link className="nav-link" to="/portfolio">
-                Portfolio
+              <Link className="nav-link" to="/profile">
+                Profile
               </Link>
-              <Link className="nav-link" to="/contact">
-                Contact
+              <Link className="nav-link" to="/login">
+                Login
               </Link>
-              <Link className="nav-link" to="/resume">
-                Resume
+              <Link className="nav-link" to="/signup">
+                Signup
               </Link>
             </div>
           </div>
