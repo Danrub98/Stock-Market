@@ -3,12 +3,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Forest from "./forest.jpg";
 
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundImage:  `url(${Forest})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+      <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Andres Plasencia Borja
