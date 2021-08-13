@@ -13,6 +13,8 @@ import Login from "./components/LoginForm";
 import Signup from "./components/SignupForm";
 
 
+
+
 function App() {
   return (
 
@@ -20,7 +22,7 @@ function App() {
       <Router>
         <div className="application-header">
           <Header />
-          <div className="container-fluid main-sections">
+          <div className="main-sections">
             <Switch>
               {/* Define routes to render different page components at different paths */}
               <Route exact path="/">

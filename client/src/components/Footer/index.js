@@ -1,21 +1,16 @@
 // Import dependencies
 import React from "react";
-
-
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 
 const Footer = () => {
   return (
-    <footer className = "flex-shrink-0 py-4">
-      <nav className="navbar fixed-bottom navbar-light">
-        <div className="container">
-          <a href="https://www.linkedin.com/in/andr%C3%A9s-plasencia-borja-120a35ba/">
-            <img alt="linkedin" width="30" />
-          </a>
-          <a  href="https://github.com/ANDRESPLASENCIABORJA">
-            <img alt="linkedin" width="30" />
-          </a>
-        </div>
-      </nav>
+    <footer>
+      <Navbar  xpand="lg"  style={{ backgroundColor: "none"}}>
+        <Container>
+          <Navbar.Brand href="#home" className="text-center">All rights reserved</Navbar.Brand>
+        </Container>
+      </Navbar>
     </footer>
   );
 };

@@ -1,35 +1,28 @@
+/* Universal Styles */
+h2 {
+  margin-bottom: 2.5%;
+  color: #FCF8F5;
+}
+
+
 /* Styles for the header navbar */
-.container-fluid {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background: none;
-  }
-  
-  .navbar-brand {
-    background: none;
-  }
-  
-  #navbarNavAltMarkup {
-    background: none;
-  }
-  
-  .navbar-nav {
-    background: none;
-  }
-  
-  .nav-link {
-    margin-right: 5%;
-    background: none;
-  }
+.card-first {
+  margin-top: 9.5%;
+  margin-left: 4.5%;
+}
 
-  /* Homepage design */
+/* Styles for the cards section */
+.widgets {
+  padding: 5%;
+}
 
-  .home-container {
-      width: 30%;
-      margin: 0;
-  }
+/* Homepage design */
 
-  .home-text {
-      margin-bottom: 5.5%;
-  }
+.home-container {
+  width: 30%;
+  margin: 0;
+}
 
+.home-text {
+  margin-bottom: 5.5%;
+}
