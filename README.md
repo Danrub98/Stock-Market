@@ -21,7 +21,9 @@
   passwords created are encrypted using the most
   advance technology in the industry.
 
-  The information from the User gets linked to his account, in this way, it’s possible that the user can see his balance, the stocks he owns and buy more if needed. 
+  The information from the User gets linked to his account, 
+  in this way, it’s possible that the user can see his balance, 
+  the stocks he owns and buy more if needed. 
   
   The front end was created to be responsive, by
   doing this, we can be sure that the User can
@@ -46,26 +48,26 @@
   is safe, and the User can use the page safely.   
 
 ## Contribution
-     To contribute with the project, other Users needs to get in contact with any member of the Team, explaining what additions are requested and they need to be tested in order to be sure that the code is safe for the User.
+  To contribute with the project, other Users needs to get in contact with any member of the Team, explaining what additions are requested and they need to be       tested in order to be sure that the code is safe for the User.
     
 ## Test
-     In the Beta version, they are no current tests created.
+  In the Beta version, they are no current tests created.
 
 
 
 
 
 ## Github
-    This project was created by Danrub98, demourej, ANDRESPLASENCIABORJA, adelalama and Sofiacrf.
+   This project was created by Danrub98, demourej, ANDRESPLASENCIABORJA, adelalama and Sofiacrf.
 
-    If you like to know more about projects and other website created, click on the following link: 
-    https://github.com/ANDRESPLASENCIABORJA
-    https://github.com/demourej
-    https://github.com/Danrub98
-    https://github.com/Sofiacrf
-    https://github.com/adelalama
+   If you like to know more about projects and other website created, click on the following link: 
+   https://github.com/ANDRESPLASENCIABORJA
+   https://github.com/demourej
+   https://github.com/Danrub98
+   https://github.com/Sofiacrf
+   https://github.com/adelalama
 
 ## Contact
-     For more information about the project, or to know more about the creator, send an email to this address: example@gmail.com
+   For more information about the project, or to know more about the creator, send an email to this address: example@gmail.com
     
      
