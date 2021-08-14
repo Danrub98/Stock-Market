@@ -1,0 +1,9 @@
+[
+    {
+      "owner_id": "6118274b02119cc6978bd665",
+      "unit_price": 147.89,
+      "total_price": 1488.90,
+      "quantity": 10,
+      "stocks": [ {"id" : "6118274b02119cc6978bd668", "name" : "Amazon.com, Inc." }]
+    }
+]

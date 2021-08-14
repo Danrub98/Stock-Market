@@ -1,0 +1,44 @@
+[
+    {
+      "ticker": "APPL",
+      "name": "Apple Inc",
+      "price": 148.89,
+      "date": "2021-08-14",
+      "icon": "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "price": 3293.97,
+      "date": "2021-08-14",
+      "icon": "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png"
+    },
+    {
+      "ticker": "FB",
+      "name": "Facebook, Inc. Common Stock",
+      "price": 363.18,
+      "date": "2021-08-14",
+      "icon": "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png"
+    },
+    {
+      "ticker": "TWTR",
+      "name": "Twitter Inc",
+      "price": 64.82,
+      "date": "2021-08-14",
+      "icon": "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla Inc",
+      "price": 717.17,
+      "date": "2021-08-14",
+      "icon": "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "price": 2754.55,
+      "date": "2021-08-14",
+      "icon": "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png"
+    }
+]
