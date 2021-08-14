@@ -1,7 +1,6 @@
 // Lets start with Link basic header
 // We have to import react
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";

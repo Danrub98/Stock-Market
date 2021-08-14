@@ -4,6 +4,16 @@ h2 {
   color: #FCF8F5;
 }
 
+.table {
+  margin: 0;
+}
+
+
+
+.header-profile{
+  margin-left: 30%;
+}
+
 
 /* Styles for the header navbar */
 .card-first {
@@ -25,4 +35,9 @@ h2 {
 
 .home-text {
   margin-bottom: 5.5%;
+}
+
+/* Profile page design */
+.card-first-profile {
+  padding-top: 9.5%;
 }

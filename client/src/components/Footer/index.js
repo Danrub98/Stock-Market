@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 const Footer = () => {
   return (
     <footer>
-      <Navbar  xpand="lg"  style={{ backgroundColor: "none"}}>
+      <Navbar  xpand="lg" fixed="bottom" style={{ backgroundColor: "#D9E4EC"}}>
         <Container>
           <Navbar.Brand href="#home" className="text-center">All rights reserved</Navbar.Brand>
         </Container>
