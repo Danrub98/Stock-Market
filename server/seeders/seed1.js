@@ -7,8 +7,8 @@ db.once('open', async () => {
   try {
     await User.deleteMany({});
     await Stock.deleteMany({});
-    await User.create(userSeeds);
-    await Stock.create(stockSeeds);
+    await User.insertMany(userSeeds);
+    await Stock.insertMany(stockSeeds);
 
   
   } catch (err) {

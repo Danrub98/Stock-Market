@@ -8,6 +8,11 @@ const orderSchema= new Schema({
     ref: 'User',
     required: true,
   },
+  stock_id: {
+    type: Schema.Types.ObjectId,
+    ref: 'Stock',
+    required: true,
+  },
   unit_price: {
     type: Number,
     required: true,
@@ -21,9 +26,7 @@ const orderSchema= new Schema({
     required: true,
   },
   stocks: [
-    {
-      id : {type: String, required: true},
-      name : {type: String, required: true }
+    { id
     }
   ]
 });
