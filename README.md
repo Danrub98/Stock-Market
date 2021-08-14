@@ -58,14 +58,19 @@
 
 
 ## Github
-   This project was created by Danrub98, demourej, ANDRESPLASENCIABORJA, adelalama and Sofiacrf.
+   This project was created by:
+   - Danrub98
+   - demourej
+   - ANDRESPLASENCIABORJA
+   - adelalama 
+   - Sofiacrf
 
    If you like to know more about projects and other website created, click on the following link: 
-   https://github.com/ANDRESPLASENCIABORJA
-   https://github.com/demourej
-   https://github.com/Danrub98
-   https://github.com/Sofiacrf
-   https://github.com/adelalama
+   - https://github.com/ANDRESPLASENCIABORJA
+   - https://github.com/demourej
+   - https://github.com/Danrub98
+   - https://github.com/Sofiacrf
+   - https://github.com/adelalama
 
 ## Contact
    For more information about the project, or to know more about the creator, send an email to this address: example@gmail.com
