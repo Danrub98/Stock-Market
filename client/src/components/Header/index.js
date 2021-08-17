@@ -10,7 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const Header = () => {
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" fixed="top" style={{ backgroundColor: "none", paddingBottom: "1.5%", paddingTop: "1.5%"}}>
+      <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark" style={{ backgroundColor: "black", color: "white", paddingBottom: "1.5%", paddingTop: "1.5%"}}>
         <Container>
           <Navbar.Brand href="#home" style={{ marginRight: "25%"}}>Traders View</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,7 +19,7 @@ const Header = () => {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/profile">Profile</Nav.Link>
               <NavDropdown title="Markets" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Stocks</NavDropdown.Item>
+                <NavDropdown.Item href="/charts">Stocks</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.2">
                   Forex

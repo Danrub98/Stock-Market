@@ -9,15 +9,12 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import Charts from "./pages/Charts";
 import Login from "./components/LoginForm";
 import Signup from "./components/SignupForm";
 
-
-
-
 function App() {
   return (
-
     <Router>
       <Router>
         <div className="application-header">
@@ -39,6 +36,10 @@ function App() {
               {/* Define a route that will take in variable data */}
               <Route exact path="/signup">
                 <Signup />
+              </Route>
+              {/* Define a route that will take in variable data */}
+              <Route exact path="/charts">
+                <Charts />
               </Route>
             </Switch>
           </div>

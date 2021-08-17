@@ -12,12 +12,7 @@ import Table from "react-bootstrap/Table";
 import { MDBIcon } from "mdbreact";
 
 import World from "../images/worlds.jpg";
-import Apple from "../images/apples.png";
-import Amazon from "../images/amazons.png";
-import Tesla from "../images/tesla.png";
-import Facebook from "../images/facebook.png";
-import Twitter from "../images/twitter.png";
-import Google from "../images/google.png";
+
 
 const Profile = () => {
   return (
@@ -40,15 +35,15 @@ const Profile = () => {
 
         <Row xs={1} md={2} className="g-4">
           <Col>
-            <Card className="mb-3">
-              <Card.Img variant="top" src={Apple} />
+            <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
-                <Card.Title className="text-center">Apple</Card.Title>
+                <Card.Title className="text-center">
+                  <MDBIcon fab icon="apple" size="2x" />
+                </Card.Title>
                 <Card.Text>
                   <ListGroup>
                     <ListGroup.Item variant="info">Ticker: APPL</ListGroup.Item>
-                    <ListGroup.Item variant="danger">Bid: </ListGroup.Item>
-                    <ListGroup.Item variant="success">Ask: </ListGroup.Item>
+                    <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
                     </ListGroup.Item>
@@ -58,15 +53,15 @@ const Profile = () => {
               </Card.Body>
             </Card>
 
-            <Card className="mb-3">
-              <Card.Img variant="top" src={Amazon} />
+            <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
-                <Card.Title className="text-center">Amazon</Card.Title>
+                <Card.Title className="text-center">
+                  <MDBIcon fab icon="paypal" size="2x" />
+                </Card.Title>
                 <Card.Text>
                   <ListGroup>
-                    <ListGroup.Item variant="info">Ticker: AMZN</ListGroup.Item>
-                    <ListGroup.Item variant="danger">Bid: </ListGroup.Item>
-                    <ListGroup.Item variant="success">Ask: </ListGroup.Item>
+                    <ListGroup.Item variant="info">Ticker: PYPL</ListGroup.Item>
+                    <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
                     </ListGroup.Item>
@@ -76,15 +71,15 @@ const Profile = () => {
               </Card.Body>
             </Card>
 
-            <Card className="mb-3">
-              <Card.Img variant="top" src={Tesla} />
+            <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
-                <Card.Title className="text-center">Tesla</Card.Title>
+                <Card.Title className="text-center">
+                  <MDBIcon fab icon="amazon" size="2x" />
+                </Card.Title>
                 <Card.Text>
                   <ListGroup>
                     <ListGroup.Item variant="info">Ticker: TSLA</ListGroup.Item>
-                    <ListGroup.Item variant="danger">Bid: </ListGroup.Item>
-                    <ListGroup.Item variant="success">Ask: </ListGroup.Item>
+                    <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
                     </ListGroup.Item>
@@ -96,15 +91,15 @@ const Profile = () => {
           </Col>
 
           <Col>
-            <Card className="mb-3">
-              <Card.Img variant="top" src={Facebook} />
+          <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
-                <Card.Title className="text-center">Facebook</Card.Title>
+                <Card.Title className="text-center">
+                  <MDBIcon fab icon="facebook" size="2x" />
+                </Card.Title>
                 <Card.Text>
                   <ListGroup>
                     <ListGroup.Item variant="info">Ticker: FB</ListGroup.Item>
-                    <ListGroup.Item variant="danger">Bid: </ListGroup.Item>
-                    <ListGroup.Item variant="success">Ask: </ListGroup.Item>
+                    <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
                     </ListGroup.Item>
@@ -114,15 +109,15 @@ const Profile = () => {
               </Card.Body>
             </Card>
 
-            <Card className="mb-3">
-              <Card.Img variant="top" src={Twitter} />
+            <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
-                <Card.Title className="text-center">Twitter</Card.Title>
+                <Card.Title className="text-center">
+                  <MDBIcon fab icon="twitter" size="2x" />
+                </Card.Title>
                 <Card.Text>
                   <ListGroup>
                     <ListGroup.Item variant="info">Ticker: TWTR</ListGroup.Item>
-                    <ListGroup.Item variant="danger"> Bid: </ListGroup.Item>
-                    <ListGroup.Item variant="success">Ask: </ListGroup.Item>
+                    <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
                     </ListGroup.Item>
@@ -132,15 +127,17 @@ const Profile = () => {
               </Card.Body>
             </Card>
 
-            <Card className="mb-3">
-              <Card.Img variant="top" src={Google} />
+            <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
-                <Card.Title className="text-center">Google</Card.Title>
+                <Card.Title className="text-center">
+                  <MDBIcon fab icon="google" size="2x" />
+                </Card.Title>
                 <Card.Text>
                   <ListGroup>
-                    <ListGroup.Item variant="info">Ticker: GOOGL</ListGroup.Item>
-                    <ListGroup.Item variant="danger">Bid: </ListGroup.Item>
-                    <ListGroup.Item variant="success">Ask: </ListGroup.Item>
+                    <ListGroup.Item variant="info">
+                      Ticker: GOOGL
+                    </ListGroup.Item>
+                    <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
                     </ListGroup.Item>
