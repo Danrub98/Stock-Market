@@ -8,12 +8,9 @@ h2 {
   margin: 0;
 }
 
-
-
 .header-profile{
   margin-left: 30%;
 }
-
 
 /* Styles for the header navbar */
 .card-first {
@@ -40,4 +37,78 @@ h2 {
 /* Profile page design */
 .card-first-profile {
   padding-top: 9.5%;
+}
+
+
+/* Sing up form style */
+.signup-form {
+  background-color: transparent;
+  margin: 12%;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.signup-form::before {
+  background-image: url("./images/signup.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+
+.signup-form button {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+/* Log in form */
+
+.login-form {
+  background-color: transparent;
+  margin: 15%;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.login-form::before {
+  background-image: url("./images/login.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+
+.login-form button {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+/* Styles for the carts page */
+.widgets-chart {
+  padding: 8%;
+  background-color: black;
+}
+
+.test {
+  margin-bottom: 1.5%;
 }
