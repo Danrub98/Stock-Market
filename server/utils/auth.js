@@ -9,10 +9,10 @@ module.exports = {
   authMiddleware: function (req, res, next) {
     // allows token to be sent via  req.query or headers
     console.log(req.query.token);
-    let token = req.body.token || req.query.token || req.headers.authorization; 
+    let token = req.body.token || req.query.token || req.headers.Authorization; 
 
     // ["Bearer", "<tokenvalue>"]
-    if (req.headers.authorization) {
+    if (req.headers.Authorization) {
       token = token.split(' ').pop().trim();
     }
 
@@ -32,6 +32,7 @@ module.exports = {
     // send to next endpoint
     next();
   },
+
   signToken: function ({ username, email, _id }) {
     const payload = { username, email, _id };
 

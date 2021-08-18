@@ -2,11 +2,26 @@
     {
       "username": "Daniel",
       "email": "daniel@gmail.com",
-      "password": "password01"
+      "password": "password01"  
     },
     {
       "username": "Adolfo",
       "email": "adolfo@gmail.com",
       "password": "password02"
+    },
+    {
+      "username": "Sofía",
+      "email": "sofi@gmail.com",
+      "password": "password03"
+    },
+    {
+      "username": "Alejandro",
+      "email": "alejandro@gmail.com",
+      "password": "password04"
+    },
+    {
+      "username": "Andres",
+      "email": "andres@gmail.com",
+      "password": "password05"
     }
 ]

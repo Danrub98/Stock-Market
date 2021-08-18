@@ -85,7 +85,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <ListGroup>
-                    <ListGroup.Item variant="info">Ticker: TSLA</ListGroup.Item>
+                    <ListGroup.Item variant="info">Ticker: AMZN</ListGroup.Item>
                     <ListGroup.Item variant="success">Price: </ListGroup.Item>
                     <ListGroup.Item action href="/charts" variant="primary">
                       Chart

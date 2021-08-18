@@ -78,7 +78,7 @@ const Profile = () => {
                 </Card.Title>
                 <Card.Text>
                   <ListGroup>
-                    <ListGroup.Item variant="info">Ticker: TSLA</ListGroup.Item>
+                    <ListGroup.Item variant="info">Ticker: AMZN</ListGroup.Item>
                     <ListGroup.Item variant="danger">Price: </ListGroup.Item>
                     <ListGroup.Item action href="#link1" variant="primary">
                       Chart
