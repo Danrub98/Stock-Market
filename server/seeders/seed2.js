@@ -5,7 +5,7 @@ const orderSeeds = require('./orders.json');
 db.once('open', async () => {
   try {
     await Order.deleteMany({});
-    await Order.create(orderSeeds);
+    await Order.insert(orderSeeds);
 
   
   } catch (err) {

@@ -1,14 +1,11 @@
 const db = require('../config/connection');
-const { User, Stock } = require('../models');
+const { User } = require('../models');
 const userSeeds = require('./userSeeds.json');
-const stockSeeds = require('./stocks.json');
 
 db.once('open', async () => {
   try {
     await User.deleteMany({});
-    await Stock.deleteMany({});
-    await User.insertMany(userSeeds);
-    await Stock.insertMany(stockSeeds);
+    await User.create(userSeeds);
 
   
   } catch (err) {
@@ -18,6 +15,5 @@ db.once('open', async () => {
 
   console.log('all done!');
   console.log(userSeeds)
-  console.log(stockSeeds);
   process.exit(0);
 });

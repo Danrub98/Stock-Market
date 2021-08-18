@@ -21,23 +21,21 @@ const userSchema = new Schema(
     },
     orders: [
       {
-        type: Schema.Types.ObjectId,
-        ref: 'Order'
+        owner_id : {type: String, required: true },
+        unit_price : {type: Number, required: true },
+        total_price : {type: Number, required: true },
+        quantity : {type: Number, required: true },
+        stocks: [
+          {
+            ticker : {type: String, required: true},
+            name : {type: String, required: true }
+          }
+        ]
       }
     ]
     // Falta poner con que otra tabla se va unir
   }, 
 );
-
-// hash user password
-userSchema.pre('save', async function (next) {
-  if (this.isNew || this.isModified('password')) {
-    const saltRounds = 10;
-    this.password = await bcrypt.hash(this.password, saltRounds);
-  }
-
-  next();
-});
 
 userSchema.pre('save', async function (next) {
   if (this.isNew || this.isModified('password')) {
