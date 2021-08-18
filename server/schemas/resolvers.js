@@ -57,7 +57,7 @@ const resolvers = {
         // Update the user with the saved stocks
         const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $push: { orders: orderData } },
+          { $push: { stocks: orderData } },
           { new: true }
         );
 
