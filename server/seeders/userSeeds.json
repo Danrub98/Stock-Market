@@ -10,7 +10,6 @@
         "total_price": 1478.90,
         "quantity": 10,
         "stocks": [
-          { "ticker": "AAPL", "name": "Apple Inc" }
         ]
       }
     ]
@@ -26,7 +25,6 @@
         "total_price": 148.90,
         "quantity": 10,
         "stocks": [
-          { "ticker": "AMZN", "name": "Amazon.com, Inc." }
         ]
       }
     ]
