@@ -1,14 +1,23 @@
 const db = require('../config/connection');
 const { User, Stock } = require('../models');
 const userSeeds = require('./userSeeds.json');
-const stockSeeds = require('./stocks.json');
+const stocksSeeds = require('./stocks.json');
+
 
 db.once('open', async () => {
   try {
     await User.deleteMany({});
     await Stock.deleteMany({});
     await User.insertMany(userSeeds);
-    await Stock.insertMany(stockSeeds);
+    await Stock.insertMany(stocksSeeds);
+
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+
+  try {
+
 
   
   } catch (err) {
@@ -18,6 +27,6 @@ db.once('open', async () => {
 
   console.log('all done!');
   console.log(userSeeds)
-  console.log(stockSeeds);
+  console.log(stocksSeeds)
   process.exit(0);
 });

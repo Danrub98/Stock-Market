@@ -12,6 +12,8 @@ import { MDBCol, MDBIcon } from "mdbreact";
 import Mountain from "../images/mountain.jpg";
 
 
+
+
 const Home = () => {
   return (
     <main>
