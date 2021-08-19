@@ -1,30 +1,36 @@
 const { gql } = require("apollo-server-express");
 
-// Now this is how our model are going to look like on graphql, lets start from the user
 const typeDefs = gql`
   type User {
-    _id: ID!
-    username: String
+    _id: ID
+    username: String!
     email: String
-    password: String
-    orders: [Stock]
+    orders: [Orders]
   }
-
-  type Auth {
-    token: ID!
-    user: User
-  }
-
-  type Stock {
-    stockId: ID!
-    icon: String
-    name: String
-    ticker: String
+  type Orders {
+    owner_id: String!
+    _id: ID
     unit_price: Float
-    quantity: Float
     total_price: Float
+    quantity: Float
+    stocks: [Stocks]
   }
-  
+
+  type Stocks {
+    _id: ID
+    ticker: String
+    name: String
+    price: Float
+    date: String
+    icon: String
+  }
+
+  type Query {
+    user(id: ID!): User
+    users: [User]
+    orders: [Orders]
+    stocks: [Stocks]
+  }
 
   input StockInput{
     stockId: String!
@@ -36,17 +42,18 @@ const typeDefs = gql`
     total_price: Float
   }
 
-  type Query {
-    user(username: String!): User
-    stocks: [Stock]
-    users: [User]
+  type Auth {
+    token: ID!
+    user: User
   }
+
+  
 
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveStock(stockData: StockInput!): User
-    removeStock(stockId: ID!): User
+    saveStock(stocks: StockInput!): User
+    removeStock(stockId: ID!): Orders
   }
 `;
 

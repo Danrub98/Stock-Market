@@ -1,27 +1,34 @@
 [
-    {
-      "username": "Daniel",
-      "email": "daniel@gmail.com",
-      "password": "password01"  
-    },
-    {
-      "username": "Adolfo",
-      "email": "adolfo@gmail.com",
-      "password": "password02"
-    },
-    {
-      "username": "Sofía",
-      "email": "sofi@gmail.com",
-      "password": "password03"
-    },
-    {
-      "username": "Alejandro",
-      "email": "alejandro@gmail.com",
-      "password": "password04"
-    },
-    {
-      "username": "Andres",
-      "email": "andres@gmail.com",
-      "password": "password05"
-    }
+  {
+    "username": "Daniel",
+    "email": "daniel@gmail.com",
+    "password": "password01",
+    "orders": [
+      {
+        "owner_id": "daniel@gmail.com",
+        "unit_price": 147.89,
+        "total_price": 1478.90,
+        "quantity": 10,
+        "stocks": [
+          { "ticker": "AAPL", "name": "Apple Inc" }
+        ]
+      }
+    ]
+  },
+  {
+    "username": "Adolfo",
+    "email": "adolfo@gmail.com",
+    "password": "password02",
+    "orders": [
+      {
+        "owner_id": "adolfo@gmail.com",
+        "unit_price": 14.89,
+        "total_price": 148.90,
+        "quantity": 10,
+        "stocks": [
+          { "ticker": "AMZN", "name": "Amazon.com, Inc." }
+        ]
+      }
+    ]
+  }
 ]

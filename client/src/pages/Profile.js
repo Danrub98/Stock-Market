@@ -15,6 +15,10 @@ import World from "../images/worlds.jpg";
 
 
 const Profile = () => {
+  // Display saved stocks (orders)
+  
+
+
   return (
     <main>
       <section className="card-first-profile container-fluid" style={{ backgroundImage:  `url(${World})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
