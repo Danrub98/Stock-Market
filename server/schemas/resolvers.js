@@ -53,9 +53,9 @@ const resolvers = {
     },
 
     // Save stocks on the user profile
-    saveStock: async (parent, { orderData }, context) => {
+    saveStock: async (parent, orderData, context) => {
       
-      console.log(context.user);
+      console.log('orderData', orderData);
 
       if (context.user) {
         // Update the user with the saved stocks
