@@ -24,14 +24,17 @@ const userSchema = new Schema({
 
   orders: [
     {
-      owner_id: { type: String, required: true },
+      owner_id : {type: String},
+      unit_price : {type: Number},
+      total_price : {type: Number},
+      quantity : {type: Number},
       stocks: [
         {
-          type: Schema.Types.ObjectId,
-          ref: 'Stock'
+          ticker : {type: String},
+          name : {type: String }
         }
-      ],
-    },
+      ]
+    }
   ],
 
 });

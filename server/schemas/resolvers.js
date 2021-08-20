@@ -54,10 +54,10 @@ const resolvers = {
 
     // Save stocks on the user profile
     saveStock: async (parent, { stocks }, context) => {
-      console.log(context.user);
+      console.log("contex", context.user);
 
       if (context.user) {
-        console.log(stocks);
+        console.log("stocks", stocks.unit_price);
         // Update the user with the saved stocks
         const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },
@@ -65,7 +65,13 @@ const resolvers = {
             $push: {
               orders: {
                 owner_id: context.user._id,
-                stocks: [stocks.stockId],
+                unit_price: stocks.unit_price,
+                total_price: stocks.total_price,
+                quantity: stocks.quantity,
+                stocks: [ {
+                  name: stocks.name,
+                  ticker: stocks.ticker
+              }]
               },
             },
           },
