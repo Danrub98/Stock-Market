@@ -10,8 +10,41 @@ import { MDBCol, MDBIcon } from "mdbreact";
 import Auth from '../utils/auth';
 // Import images
 import Mountain from "../images/mountain.jpg";
+import { gql } from "apollo-server-core";
+import { Mutation } from "react-apollo";
+
+const SAVE_STOCK = gql`
+mutation add{
+  saveStock(stocks: {
+    stockId: "611d74a47b67398bae9ab508",
+    icon: "https://www.clipartmax.com/png/middle/360-3605240_stocks-transparent-background-transparent-stock-icon-png.png",
+    name: "Apple Inc",
+    ticker: "APPL",
+    unit_price: 47.89,
+    quantity: 10,
+    total_price: 478.09
+})
+}
+`;
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
+  //const [showModal, setShowModal] = useState(false);
+  // const [buyStock, setBuyStock] = useState({
+  //   name: "",
+  //   ticker: "",
+  //   unit_price: "",
+  //   quantity: 1,
+  //   total_price: ""
+  // });
+  // const [saveStock, {error}] = useMutation(SAVE_STOCK);
+  const state = {
+    stockId: "",
+    icon: "",
+    name: "",
+    ticker: "",
+    unit_price: "",
+    quantity: "",
+    total_price: ""
+  };
   return (
     <main>
       <section className="home-main-section">
@@ -56,12 +89,21 @@ const Home = () => {
                 </Card.Text>
                 {Auth.loggedIn() ? (
                   <>
-                    <Button className="text-center">Buy</Button>
+                    <Mutation
+                      mutation={SAVE_STOCK}>
+                      {mutation => (
+                        <button
+                          onClick={() => mutation({ variables: { input: state } })}
+                        >
+                          Buy
+                        </button>
+                      )}
+                    </Mutation>
                     <Button className="text-center">Sell</Button>
                   </>) : (
                   <p className="text-center">Login to buy stocks </p>
                 )}
-            </Card.Body>
+              </Card.Body>
             </Card>
             <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
@@ -84,7 +126,7 @@ const Home = () => {
                   </>) : (
                   <p className="text-center">Login to buy stocks </p>
                 )}
-            </Card.Body>
+              </Card.Body>
             </Card>
             <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
@@ -107,7 +149,7 @@ const Home = () => {
                   </>) : (
                   <p className="text-center">Login to buy stocks </p>
                 )}
-            </Card.Body>
+              </Card.Body>
             </Card>
           </Col>
           <Col>
@@ -132,7 +174,7 @@ const Home = () => {
                   </>) : (
                   <p className="text-center">Login to buy stocks </p>
                 )}
-            </Card.Body>
+              </Card.Body>
             </Card>
             <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
@@ -155,7 +197,7 @@ const Home = () => {
                   </>) : (
                   <p className="text-center">Login to buy stocks </p>
                 )}
-            </Card.Body>
+              </Card.Body>
             </Card>
             <Card bg={"dark"} text={"white"} className="mb-3">
               <Card.Body>
@@ -179,7 +221,7 @@ const Home = () => {
                   </>) : (
                   <p className="text-center">Login to buy stocks </p>
                 )}
-            </Card.Body>
+              </Card.Body>
             </Card>
           </Col>
         </Row>
